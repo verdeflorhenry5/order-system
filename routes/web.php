@@ -6,8 +6,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
+
     Route::get('/', function () {
-        return redirect('/dashboard');
+        return redirect('/login');
     });
 
 Route::middleware(['auth', 'verified'])->group(function () {
